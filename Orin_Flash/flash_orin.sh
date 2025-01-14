@@ -91,6 +91,9 @@ elif [[ $balena_device_name = "jetson-orin-nx-xavier-nx-devkit" ]] || [[ $balena
 elif [[ $balena_device_name = "jetson-agx-orin-devkit-64gb" ]]; then
 	device_type="jetson-agx-orin-devkit"
 	device_dtb="tegra234-p3737-0000+p3701-0005.dtb"
+elif [[ $balena_device_name = "forecr-dsb-ornx-orin-nano-8gb" ]]; then
+	device_type="jetson-orin-nano-devkit"
+	device_dtb="tegra234-p3768-0000+p3767-0003-nv.dtb"
 else
 	log ERROR "Unknown or unspecified device-type!"
 fi
